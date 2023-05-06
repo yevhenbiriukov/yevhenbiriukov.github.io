@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>Мои проекты</title>
+    <title>Моя страница</title>
     <style>
-      /* Стили для блоков */
-      .block {
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px #ddd;
-      }
-      
-      /* Стили для заголовка блока */
-      .block-header {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      
-      /* Стили для списка ссылок */
-      .block-links {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      
-      /* Стили для элементов списка */
-      .block-link {
-        margin-bottom: 5px;
-      }
-      
-      /* Стили для ссылок */
-      .block-link a {
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      
-      /* Стили для ссылок при наведении курсора */
-      .block-link a:hover {
-        text-decoration: underline;
-      }
+        /* Стили для страницы */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Стили для заголовка страницы */
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Стили для блока */
+        .block {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ddd;
+        }
+
+        /* Стили для заголовка блока */
+        .block-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Стили для текста в блоке */
+        .block-text {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Стили для кнопки */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #666;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        /* Стили для кнопки при наведении курсора */
+        .btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
+    <h1>Моя страница</h1>
     <div class="block">
-      <div class="block-header">Проекты на GitHub</div>
-      <ul class="block-links">
-        <li class="block-link"><a href="https://github.com/user/project1">Проект 1</a></li>
-        <li class="block-link"><a href="https://github.com/user/project2">Проект 2</a></li>
-        <li class="block-link"><a href="https://github.com/user/project3">Проект 3</a></li>
-      </ul>
+        <div class="block-header">О себе</div>
+        <div class="block-text">
+            <p>Привет! Меня зовут Иван, я занимаюсь разработкой веб-сайтов и приложений.</p>
+            <p>На этой странице я хочу поделиться с вами своими проектами и немного о себе рассказать.</p>
+        </div>
+        <a href="#" class="btn">Связаться со мной</a>
     </div>
     <div class="block">
-      <div class="block-header">Проекты на GitLab</div>
-      <ul class="block-links">
-        <li class="block-link"><a href="https://gitlab.com/user/project4">Проект 4</a></li>
-        <li class="block-link"><a href="https://gitlab.com/user/project5">Проект 5</a></li>
-        <li class="block-link"><a href="https://gitlab.com/user/project6">Проект 6</a></li>
-      </ul>
+        <div class="block-header">Мои проекты</div>
+        <div class="block-text">
+            <p>Вот несколько проектов, над которыми я работал:</p>
+            <ul>
+                <li><a href="#">Проект 1</a></li>
+                <li><a href="#">Проект 2</a></li>
+                <li><a href="#">Проект 3</a></li>
+            </ul>
+        </div>
+        <a href="#" class="btn">Посмотреть все проекты</a>
     </div>
-  </body>
+    <div class="block">
+        <div class <div class="block">
+            <h2>Мои проекты</h2>
+            <div class="project-card">
+                <h3>Проект 1</h3>
+                <p>Описание проекта 1</p>
+                <a href="#">Ссылка на проект 1</a>
+            </div>
+            <div class="project-card">
+                <h3>Проект 2</h3>
+                <p>Описание проекта 2</p>
+                <a href="#">Ссылка на проект 2</a>
+            </div>
+            <div class="project-card">
+                <h3>Проект 3</h3>
+                <p>Описание проекта 3</p>
+                <a href="#">Ссылка на проект 3</a>
+            </div>
+        </div>
+
+        <div class="block">
+            <h2>Обо мне</h2>
+            <p>Немного о себе</p>
+        </div>
+
+        <div class="block">
+            <h2>Мои контакты</h2>
+            <ul>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Адрес</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
