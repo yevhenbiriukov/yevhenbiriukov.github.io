@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Моя страница на GitHub</title>
+    <title>My GitHub-page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -52,10 +52,15 @@
             font-size: 24px;
         }
 
-        .card p {
+        /* .card p {
             margin-top: 0;
             font-size: 16px;
             line-height: 1.5;
+        } */
+
+        .card p {
+            max-width: 50%;
+            margin: 0 auto;
         }
 
         .card a {
@@ -71,12 +76,29 @@
         .card a:hover {
             background-color: #666;
         }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            /* измените значение в соответствии с вашими потребностями */
+            margin: 0 auto;
+            padding-bottom: 56.25%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Моя страница на GitHub</h1>
+        <h1>Yevhen Biriukov - Python developer</h1>
     </header>
 
     <main>
@@ -86,19 +108,20 @@
                 также в использовании различных фреймворков и библиотек, таких как React и Bootstrap.</p>
             <a href="https://github.com/username/about">Подробнее обо мне</a>
         </div>
-        
+
 
         <div class="card">
             <h2>Обо мне</h2>
-            <p>Привет! Меня зовут Иван и я занимаюсь разработкой веб-сайтов. У меня есть опыт в HTML, CSS, JavaScript, а также в использовании различных фреймворков и библиотек, таких как React и Bootstrap.</p>
+            <p>Привет! Меня зовут Иван и я занимаюсь разработкой веб-сайтов. У меня есть опыт в HTML, CSS, JavaScript, а
+                также в использовании различных фреймворков и библиотек, таких как React и Bootstrap.</p>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
                     allowfullscreen></iframe>
             </div>
             <p class="video-title">Название вашего видео</p>
         </div>
-        
-        
+
+
     </main>
 </body>
 
